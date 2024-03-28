@@ -3,18 +3,20 @@ vim.g.maplocalleader = ' '
 
 local opt = vim.opt
 
--- line numbers 
+-- line numbers
 opt.relativenumber = true
 opt.number = true
 
--- tabs & indentation 
+-- tabs & indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
--- line wrap 
+-- line wrap
 opt.wrap = false
 
 -- Sync clipboard between OS and Neovim.
 opt.clipboard = 'unnamedplus'
+
+vim.api.nvim_set_keymap('n', '<CR>', ':nohlsearch<CR><CR>', { silent = true })
