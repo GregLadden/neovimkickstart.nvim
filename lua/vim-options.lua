@@ -18,5 +18,3 @@ opt.wrap = false
 
 -- Sync clipboard between OS and Neovim.
 opt.clipboard = 'unnamedplus'
-
-vim.api.nvim_set_keymap('n', '<CR>', ':nohlsearch<CR><CR>', { silent = true })
